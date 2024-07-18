@@ -18,36 +18,44 @@
 
 </div>
 
-<div class="container">
-<form class="row g-3" action="/member/join" method="post">
+<div class="container" >
+<form class="row g-3" action="/member/join" method="post" id="frm">
 
   <div class="col-md-6">
     <label for="inputID" class="form-label">ID</label>
-    <input type="text" class="form-control" id="inputEmail" name="member_id">
+    <input type="text" class="form-control ch" id="inputId" name="member_id">
   </div>
   <div class="col-md-6">
     <label for="inputPassword" class="form-label">Password</label>
-    <input type="password" class="form-control" id="inputPassword" name="member_pw">
+    <input type="password" class="form-control ch" id="inputPassword" name="member_pw">
+  <div id="pwerror"></div>
   </div>
-   <div class="col-md-6">
+   <div class="col-12">
     <label for="inputName" class="form-label">Name</label>
-    <input type="text" class="form-control" id="inputName" name="member_name">
+    <input type="text" class="form-control ch" id="inputName" name="member_name">
   </div>
-   <div class="col-md-6">
+   <div class="col-12">
     <label for="inputPhone" class="form-label">Phone-Number</label>
-    <input type="text" class="form-control" id="inputPhone" name="member_phone">
+    <input type="text" class="form-control ch" id="inputPhone" name="member_phone">
   </div>
   <div class="col-12">
     <label for="inputMail" class="form-label">E-mail</label>
-    <input type="text" class="form-control" id="inputMail" name="member_mail">
+    <input type="text" class="form-control ch" id="inputMail" name="member_mail">
   </div>
-
   <div class="col-12">
-    <button type="submit" class="btn btn-primary">Join</button>
+    <button type="button" id="add" class="btn btn-primary">PicturesAdd</button>
   </div>
-  
-</form>
+  <div id="result">
+
+  </div>
+  <div class="col-12">
+    <button type="button" id="btn" class="btn btn-primary">Join</button>
+  </div>
 </div>
+</form>
+
 
 <c:import url="/WEB-INF/views/sample/footer.jsp"></c:import>
+<script type="text/javascript" src="../resources/js/member/memberJoinCheck.js"></script>
+<script type="text/javascript" src="../resources/js/commons/files.js"></script>
 </html>
