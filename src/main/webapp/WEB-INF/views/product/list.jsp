@@ -11,14 +11,10 @@
 <body style="background-image: url('/resources/images/background-img.png')">
 
 	<c:import url="/WEB-INF/views/sample/topheader.jsp"></c:import>
-</body>
-<div class="justify-content-center text-center mt-3 mb-3">
-
-	<h3>금융상품 리스트</h3>
 
 <div class = "justify-content-center text-center mt-3 mb-3">
 
-<h3>금융상품 리스트</h3>
+<h3>Prouduct</h3>
 
 </div>
 
@@ -56,8 +52,7 @@
 <div class="container justify-content-center text-center mb-5">
 
 	<div style="float: right">
-		<a href="/product/add"><button class="btn btn-primary">상품
-				추가</button></a>
+		<a href="/product/add"><button class="btn btn-primary">상품추가</button></a>
 	</div>
 
 </div>

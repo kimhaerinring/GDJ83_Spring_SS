@@ -21,15 +21,22 @@
 <div class="container" >
 <form class="row g-3" action="/member/join" method="post" id="frm">
 
-  <div class="col-md-6">
+  <div class="col-12">
     <label for="inputID" class="form-label">ID</label>
     <input type="text" class="form-control ch" id="inputId" name="member_id">
   </div>
   <div class="col-md-6">
     <label for="inputPassword" class="form-label">Password</label>
-    <input type="password" class="form-control ch" id="inputPassword" name="member_pw">
+    <input type="password" class="form-control ch" id="inputPassword">
   <div id="pwerror"></div>
   </div>
+
+  <div class="col-md-6">
+    <label for="inputPassword" class="form-label">Password</label>
+    <input type="password" class="form-control ch" id="inputPasswordCheck" name="member_pw">
+  <div id="pweeqrror"></div>
+  </div>
+
    <div class="col-12">
     <label for="inputName" class="form-label">Name</label>
     <input type="text" class="form-control ch" id="inputName" name="member_name">

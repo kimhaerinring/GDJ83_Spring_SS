@@ -14,7 +14,7 @@
 </body>
 <div class = "justify-content-center text-center mt-3 mb-3">
 
-<h3>마이페이지</h3>
+<h3>My page</h3>
 
 </div>
 
