@@ -26,10 +26,10 @@
 		<thead>
 
 			<tr>
-				<td>상품번호</td>
-				<td>상품명</td>
-				<td>상품설명</td>
-				<td>이자율</td>
+				<td>Product -Number</td>
+				<td>Product-Name</td>
+				<td>Product-Description</td>
+				<td>Interest Rate</td>
 			</tr>
 		</thead>
 		<tbody>
@@ -52,7 +52,7 @@
 <div class="container justify-content-center text-center mb-5">
 
 	<div style="float: right">
-		<a href="/product/add"><button class="btn btn-primary">상품추가</button></a>
+		<a href="/product/add"><button class="btn btn-primary">Product Add</button></a>
 	</div>
 
 </div>
@@ -90,8 +90,8 @@
 		<div class="col-12">
 			<label class="visually-hidden" for="inlineFormSelectPref">Preference</label>
 			<select name="kind" class="form-select" id="inlineFormSelectPref">
-				<option value="k1">상품명</option>
-				<option value="k2">상품내용</option>
+				<option value="k1">Product-Name</option>
+				<option value="k2">Product-Description</option>
 			</select>
 		</div>
 
@@ -99,11 +99,11 @@
 			<label class="visually-hidden" for="inlineFormInputGroupUsername"></label>
 			<div class="input-group">
 				<input name="search" type="text" class="form-control"
-					id="inlineFormInputGroupUsername" placeholder="검색어를 입력하세요">
+					id="inlineFormInputGroupUsername" placeholder="Search Text">
 			</div>
 		</div>
 		<div class="col-12">
-			<button type="submit" class="btn btn-primary">검색하기</button>
+			<button type="submit" class="btn btn-primary">Search</button>
 		</div>
 	</form>
 </div>

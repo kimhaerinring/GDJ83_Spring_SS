@@ -10,6 +10,7 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.CookieValue;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.multipart.MultipartFile;
 
 @Controller
 @RequestMapping("/member/*")
@@ -24,9 +25,14 @@ public class MemberController {
 	}
 
 	@RequestMapping(value = "join", method = RequestMethod.POST)
-	public String joinPage(Model model, MemberDTO memberDTO) throws Exception {
+	public String joinPage(Model model, MemberDTO memberDTO, MultipartFile files, HttpSession session)
+			throws Exception {
+		System.out.println(session.getServletContext());
+		System.out.println(files.getName());
+		System.out.println(files.getOriginalFilename());
+		System.out.println(files.getSize());
 
-		int num = memberService.join(memberDTO);
+		int num = memberService.join(memberDTO, files, session);
 		String url = "";
 
 		if (num > 0) {
@@ -38,6 +44,7 @@ public class MemberController {
 		}
 
 		return url;
+
 	}
 
 	@RequestMapping(value = "login", method = RequestMethod.GET)

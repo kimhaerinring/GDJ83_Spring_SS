@@ -21,48 +21,40 @@ const pwc = document.getElementById("inputPasswordCheck");
 const del = document.getElementById("del");
 
 
-// pwc.addEventListener("blur", function(){
-//     pwerror.innerHTML="";
-//     if(pwc.value != pw.value){
-//         pwerror.innerHTML="password가 맞지 않습니다.";
-//         pwc.value="";
-//         pwc.focus();
-//         return;
-//     }
-// })
-// pwc.addEventListener("change",function(){
-//     if(pw.value != ){
-
-//     }
-// })
 
 
-      
 pwc.addEventListener("blur", function(){
-    pwerror.innerHTML="";
-    if(pwc.value != pw.value){
-        pwerror.innerHTML="password가 맞지 않습니다.";
+    pwc.innerText="";
+
+    if(pw.value != pwc.value){
+        
+        pweeqrror.innerText="Password가 일치 하지 않음";
         pwc.value="";
-        pwc.focus();
         return;
     }
 
-btn.addEventListener("click",function(){
+ })
+ 
+ btn.addEventListener("click", function(){
     pwerror.innerHTML="";
-    if(id.value=="" ||pw.value=="" ||rname.value=="" ||phone.value=="" ||mail.value==""){
-        alert('모든 정도 입력바람')
-
-    }if(pw.value=="" || pw.value.length<6||pwc.value.length<6 ){
-      pwerror.innerHTML="password가 비어있거나 6글자 이상이어야합니다.";
-      pw.focus();
+    if(id.value ==""){
+        alert('ID는 필수 입니다');
+        id.focus();
         return;
+    }
+    if(pw.value=="" || pw.value.length<6){
 
+        pwerror.innerHTML="Password는 비어 있거나 6글자 이상이어야 함"
+        pw.focus();
+        return;
     }
-      else{
-        alert('ok')
-        frm.submit();
-    }
-});
+  
+ });
+      
+
+
+
+
 
 
 

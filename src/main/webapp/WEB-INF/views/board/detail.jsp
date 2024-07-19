@@ -23,12 +23,12 @@
 	<thead>
 	
 		<tr>
-			<td>글번호</td>
-			<td>글제목</td>
-			<td>작성자</td>
-			<td>작성일자</td>
-			<td>수정일자</td>
-			<td>조회수</td>
+			<td>Num</td>
+			<td>Title</td>
+			<td>Writer</td>
+			<td>Create Date</td>
+			<td>Update Date</td>
+			<td>Hit</td>
 		</tr>
 
 	</thead>
@@ -60,10 +60,10 @@
 		  
 		  <c:if test="${member.member_id==dto.boardWriter}">
 		<div class="col-8 mt-3">
-		  <a href="./update?write=update&boardNum=${dto.boardNum}"><button type="submit" class="btn btn-primary">수정하기</button></a>
+		  <a href="./update?write=update&boardNum=${dto.boardNum}"><button type="submit" class="btn btn-primary">Update</button></a>
 		  </div>
 		<div class="col-8 mt-3">
-		  <a href="./delete?boardNum=${dto.boardNum}"><button type="submit" class="btn btn-primary">삭제하기</button></a>
+		  <a href="./delete?boardNum=${dto.boardNum}"><button type="submit" class="btn btn-primary">Delete</button></a>
 		  </div>
 		</c:if>
 		</div>

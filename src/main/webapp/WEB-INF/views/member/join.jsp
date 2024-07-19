@@ -19,7 +19,7 @@
 </div>
 
 <div class="container" >
-<form class="row g-3" action="/member/join" method="post" id="frm">
+<form class="row g-3" action="/member/join" method="post" id="frm"  enctype="multipart/form-data">
 
   <div class="col-12">
     <label for="inputID" class="form-label">ID</label>
@@ -56,13 +56,13 @@
 
   </div>
   <div class="col-12">
-    <button type="button" id="btn" class="btn btn-primary">Join</button>
+    <button type="submit" id="btn" class="btn btn-primary">Join</button>
   </div>
 </div>
 </form>
 
 
 <c:import url="/WEB-INF/views/sample/footer.jsp"></c:import>
-<script type="text/javascript" src="../resources/js/member/memberJoinCheck.js"></script>
+<!-- <script type="text/javascript" src="../resources/js/member/memberJoinCheck.js"></script>-->
 <script type="text/javascript" src="../resources/js/commons/files.js"></script>
 </html>

@@ -33,19 +33,19 @@
 		<form method ="post">
 		<input type="hidden" value="${boardDTO.boardNum}" name="boardNum">
 		<div class="mb-3">
-		  <label for="exampleFormControlInput1" class="form-label disabled">작성자</label>
+		  <label for="exampleFormControlInput1" class="form-label disabled">Writer</label>
 		  <input class="form-control" type="text" name="boardWriter" value="${member.member_id}" readonly aria-label="input example">
 		</div>
 		<div class="mb-3">
-		  <label for="exampleFormControlInput1" class="form-label">글제목</label>
+		  <label for="exampleFormControlInput1" class="form-label">Title</label>
 		  <input type="text" class="form-control" id="exampleFormControlInput1" name="boardTitle">
 		</div>
 		<div class="mb-3">
-		  <label for="exampleFormControlTextarea1" class="form-label">글내용</label>
+		  <label for="exampleFormControlTextarea1" class="form-label">Contents</label>
 		  <textarea class="form-control" id="exampleFormControlTextarea1" rows="6" name="boardContents"></textarea>
 		</div>
 		  <div class="col-8 mt-3">
-		  <button type="submit" class="btn btn-primary">작성하기</button>
+		  <button type="submit" class="btn btn-primary">Write</button>
 		  </div>
 		</form>
 		</div>

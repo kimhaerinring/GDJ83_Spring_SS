@@ -35,11 +35,11 @@
 	<thead>
 	
 		<tr>
-			<td>글번호</td>
-			<td>글제목</td>
-			<td>작성자</td>
-			<td>작성일자</td>
-			<td>조회수</td>
+			<td>Num</td>
+			<td>Title</td>
+			<td>Name</td>
+			<td>Date</td>
+			<td>Hit</td>
 		</tr>
 	</thead>
 	<tbody>
@@ -83,7 +83,7 @@
 <div class ="container justify-content-center text-center mb-5">
 	
 	<div style="float:right">
-	 <a href="./add?write=add"><button type="submit" class="btn btn-primary">글쓰기</button></a>
+	 <a href="./add?write=add"><button type="submit" class="btn btn-primary">Write</button></a>
 	</div>
 
 </div>
@@ -119,22 +119,22 @@
   <div class="col-12">
     <label class="visually-hidden" for="inlineFormSelectPref">Preference</label>
     <select name = "kind" class="form-select" id="inlineFormSelectPref">
-      <option value="title">제목</option>
-      <option value="contents">내용</option>
-      <option value="writer">작성자</option>
+      <option value="title">Title</option>
+      <option value="contents">Contents</option>
+      <option value="writer">Writer</option>
     </select>
   </div>
   
   <div class="col-12">
     <label class="visually-hidden" for="inlineFormInputGroupUsername"></label>
     <div class="input-group">
-      <input name = "search" type="text" class="form-control" id="inlineFormInputGroupUsername" placeholder="검색어를 입력하세요">
+      <input name = "search" type="text" class="form-control" id="inlineFormInputGroupUsername" placeholder="search text">
     </div>
   </div>
 
 
   <div class="col-12">
-    <button type="submit" class="btn btn-primary">검색하기</button>
+    <button type="submit" class="btn btn-primary">Search</button>
   </div>
 </form>
 
