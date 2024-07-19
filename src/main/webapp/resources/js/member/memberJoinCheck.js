@@ -21,6 +21,23 @@ const pwc = document.getElementById("inputPasswordCheck");
 const del = document.getElementById("del");
 
 
+// pwc.addEventListener("blur", function(){
+//     pwerror.innerHTML="";
+//     if(pwc.value != pw.value){
+//         pwerror.innerHTML="password가 맞지 않습니다.";
+//         pwc.value="";
+//         pwc.focus();
+//         return;
+//     }
+// })
+// pwc.addEventListener("change",function(){
+//     if(pw.value != ){
+
+//     }
+// })
+
+
+      
 pwc.addEventListener("blur", function(){
     pwerror.innerHTML="";
     if(pwc.value != pw.value){
@@ -29,15 +46,6 @@ pwc.addEventListener("blur", function(){
         pwc.focus();
         return;
     }
-})
-pwc.addEventListener("change",function(){
-    if(pw.value != ){
-
-    }
-})
-
-
-
 
 btn.addEventListener("click",function(){
     pwerror.innerHTML="";
@@ -47,7 +55,7 @@ btn.addEventListener("click",function(){
     }if(pw.value=="" || pw.value.length<6||pwc.value.length<6 ){
       pwerror.innerHTML="password가 비어있거나 6글자 이상이어야합니다.";
       pw.focus();
-      return;
+        return;
 
     }
       else{
